@@ -27,11 +27,11 @@ public class AssesmentAssigment {
             creditCardsIcon.click();
 
             // Click "Apply Now" for Secured Credit Card
-            WebElement applyBtn = driver.findElement(By.xpath("//a[contains(text(), 'Secured Credit Card')]/ancestor::div[@class='card-content-inner']//button[@data-testid='card-apply-now-button']"));
+            WebElement applyBtn = driver.findElement(By.xpath("//*[@id=\"siteframe\"]/div/div[1]/div/div[3]/div/div[6]/div/div/div[2]/div[2]/div[3]/div[2]/div/a/span"));
             applyBtn.click();
 
             // Skip pre-fill step
-            WebElement skipBtn = driver.findElement(By.xpath("//button[contains(text(), 'Skip This Step')]"));
+            WebElement skipBtn = driver.findElement(By.xpath("//*[@id=\"adaptive-skip-this-step\"]"));
             skipBtn.click();
 
             // Wait for APR for Cash Advances to be visible
